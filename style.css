@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --green500: hsl(158, 36%, 37%);
+    --green700: hsl(158, 42%, 18%);
+    --black: hsl(212, 21%, 14%);
+    --grey: hsl(228, 12%, 48%);
+    --cream: hsl(30, 38%, 92%);
+    --white: hsl(0, 0%, 100%)
+}
+
+body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--cream);
+    height: 100dvh;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--white);
+    border-radius: 10px;
+    width: 20em;
+    margin-bottom: 0.9em;
+    overflow: hidden;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    padding: 1.2em;
+    background-color: var(--white);
+    border-radius: 0 0 10px 10px;
+}
+
+img {
+    vertical-align: middle;
+}
+
+.img {
+    width: 100%;
+}
+
+h2 {
+    font-family: Montserrat, sans-serif;
+    font-weight: 500;
+    font-size: 0.8em;
+    color: var(--grey);
+    letter-spacing: 0.5em;
+    margin-top: 0;
+}
+
+h1 {
+    font-family: Fraunces, serif;
+    font-weight: 700;
+    color: var(--black);
+    margin: 0;
+}
+
+p {
+    color: var(--grey);
+    font-family: Montserrat, sans-serif;
+    line-height: 1.5em;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+table {
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+th {
+    font-family: Fraunces, serif;
+    font-weight: 700;
+    color: var(--green500);
+    font-size: 2em;
+    width: 50%;
+}
+
+td {
+    text-decoration: line-through;
+    font-family: Montserrat, sans-serif;
+    font-weight: 500;
+    font-size: 0.9em;
+    color: var(--grey);
+}
+
+button {
+    padding: 1.2em;
+    font-size: 1em;
+    border-radius: 0.5em;
+    border-width: 0;
+    background-color: var(--green500);
+    color: var(--white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-family: Montserrat, sans-serif;
+    cursor: pointer;
+    transition: 0.2s;
+    font-size: 14px;
+}
+
+button:hover {
+    background-color: var(--green700);
+}
+
+button img {
+    margin-right: 10px;
+}
+
+@media only screen and (min-width: 44em) {
+    main {
+        flex-direction: row;
+        width: 38em;
+    }
+
+    h2, h1 {
+        margin: 20px 0;
+        margin-top: 0;
+    }
+
+    h1 {
+        font-size: 2em;
+        line-height: 1em;
+        margin-bottom: 10px;
+    }
+
+    .content {
+        padding: 2em;
+        z-index: 1;
+        border-radius: 0 10px 10px 0;
+        width: 85%;
+    }
+
+    table {
+        margin: 20px 0;
+        margin-top: 10px;
+    }
+
+    .img img {
+        height: 100%;
+    }
+}
