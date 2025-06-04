@@ -24,7 +24,7 @@ main {
     flex-direction: column;
     background-color: var(--white);
     border-radius: 10px;
-    width: 20em;
+    width: 70%;
     margin-bottom: 0.9em;
     overflow: hidden;
 }
@@ -41,7 +41,7 @@ img {
     vertical-align: middle;
 }
 
-.img {
+.img, .img img {
     width: 100%;
 }
 
@@ -92,7 +92,6 @@ td {
 
 button {
     padding: 1.2em;
-    font-size: 1em;
     border-radius: 0.5em;
     border-width: 0;
     background-color: var(--green500);
@@ -115,7 +114,7 @@ button img {
     margin-right: 10px;
 }
 
-@media only screen and (min-width: 44em) {
+@media only screen and (min-width: 40em) {
     main {
         flex-direction: row;
         width: 38em;
